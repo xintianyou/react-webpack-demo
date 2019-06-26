@@ -1,0 +1,78 @@
+html{
+  // font-size: 100px;
+  // font-size: 10px;
+  height: 100%;
+}
+body{
+  min-width: 1200px;
+  height: 100%;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  // font-family: 'Microsoft Yahei', Arial, Gadget, sans-serif;
+}
+body, p{
+  margin: 0;
+  padding: 0;
+}
+ul,ol,li{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  color: inherit;
+}
+i{
+    font-style: normal;
+}
+.el-header,.el-footer,.el-main{
+  padding: 0;
+}
+.el-header{
+  height: 96px !important;
+}
+.el-footer{
+  height: 224px !important;
+}
+/** 两种清除浮动方式 **/
+.clear{
+  clear: both;
+}
+// 应用至父元素即可
+.clean::after { 
+  content: "";
+  display: block; 
+  clear: both;
+}
+
+.inline_block {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* 设置滚动条的样式 */
+::-webkit-scrollbar {
+  width:8px;
+  height: 8px;
+  }
+  /* 滚动槽 */
+  ::-webkit-scrollbar-track {
+    -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+    border-radius:14px;
+  }
+  /* 滚动条滑块 */
+  ::-webkit-scrollbar-thumb {
+    border-radius:14px;
+    background: rgba(0,0,0,.3);
+    -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+  }
+  ::-webkit-scrollbar-thumb:window-inactive {
+    background: rgba(0,0,0,.3);
+  }

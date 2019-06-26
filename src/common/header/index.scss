@@ -1,0 +1,12 @@
+ul{
+  margin: 0;
+  padding: 0;
+  height: 50px;
+  background: #ccc;
+  li{
+    float: left;
+    width: 100px;
+    margin-right: 100px;
+    list-style: none;
+  }
+}
