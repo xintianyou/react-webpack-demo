@@ -5,17 +5,20 @@ import "./index.scss";
 export default class Header extends React.Component {
   render() {
     return (
-      <div>
+      <div className="header">
+        <div className="topNav">
+          <div className="centerBlock"></div>
+        </div>
         <nav>
           <ul>
             <li>
               <Link to="/">Home</Link>
             </li>
             <li>
-              <Link to="/about/">About</Link>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <Link to="/users/">Users</Link>
+              <Link to="/users">Users</Link>
             </li>
             <li>
               <Link to="/users/detail">detail</Link>

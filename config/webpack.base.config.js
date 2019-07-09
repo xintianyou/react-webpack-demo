@@ -17,8 +17,13 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /.js$/,
-        use: 'babel-loader'
+        test: /\.js$/,
+        use: [
+          {
+            loader: 'babel-loader',
+            query: {compact: false}
+          }
+        ]
       },
       {
         test: /\.css$/,

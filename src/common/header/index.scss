@@ -1,12 +1,29 @@
-ul{
-  margin: 0;
-  padding: 0;
-  height: 50px;
-  background: #ccc;
-  li{
-    float: left;
-    width: 100px;
-    margin-right: 100px;
-    list-style: none;
+.headerBlock{
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+}
+.header{
+  height: 96px;
+  .topNav{
+    height: 36px;
+    background: #ccc;
+    .centerBlock{
+      @extend .headerBlock;
+    }
+  }
+  nav{
+    height: 60px;
+    box-shadow: 2px 2px 2px #ccc;
+    ul{
+      @extend .headerBlock;
+      li{
+        float: left;
+        width: 100px;
+        height: 100%;
+        line-height: 60px;
+        margin-right: 100px;
+      }
+    }
   }
 }

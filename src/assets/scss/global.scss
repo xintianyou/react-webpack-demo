@@ -13,8 +13,16 @@ body, p{
   margin: 0;
   padding: 0;
 }
+#app{
+  height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+  margin: 0;
+}
 ul,ol,li{
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 a{
   text-decoration: none;
@@ -22,15 +30,6 @@ a{
 }
 i{
     font-style: normal;
-}
-.el-header,.el-footer,.el-main{
-  padding: 0;
-}
-.el-header{
-  height: 96px !important;
-}
-.el-footer{
-  height: 224px !important;
 }
 /** 两种清除浮动方式 **/
 .clear{
@@ -61,18 +60,21 @@ input[type=number]::-webkit-outer-spin-button {
 ::-webkit-scrollbar {
   width:8px;
   height: 8px;
-  }
+}
   /* 滚动槽 */
-  ::-webkit-scrollbar-track {
-    -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
-    border-radius:14px;
-  }
+::-webkit-scrollbar-track {
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.3);
+  border-radius:14px;
+}
   /* 滚动条滑块 */
-  ::-webkit-scrollbar-thumb {
-    border-radius:14px;
-    background: rgba(0,0,0,.3);
-    -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
-  }
-  ::-webkit-scrollbar-thumb:window-inactive {
-    background: rgba(0,0,0,.3);
-  }
+::-webkit-scrollbar-thumb {
+  border-radius:14px;
+  background: rgba(0,0,0,.3);
+  -webkit-box-shadow:inset006pxrgba(0,0,0,0.5);
+}
+::-webkit-scrollbar-thumb:window-inactive {
+  background: rgba(0,0,0,.3);
+}
+.appContainer{
+  min-height: calc(100% - 296px)
+}

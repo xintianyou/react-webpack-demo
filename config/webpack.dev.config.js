@@ -9,6 +9,7 @@ module.exports = merge(webpackBaseConfig,{
     new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
+    host: "0.0.0.0",
     port: '9000',
     contentBase: path.join(__dirname, '../dist'),
     compress: true,
@@ -16,7 +17,14 @@ module.exports = merge(webpackBaseConfig,{
     hot: true,
     https: false,
     noInfo: true,
-    open: true,
-    proxy: {}
+    proxy: {
+      '/gateway/**': {
+        target: 'http://192.168.1.252:9999/gateway/',
+        changeOrigin: true,
+        pathRewrite: {
+          '^/gateway': ''
+        }
+      }
+    }
   }
 })
